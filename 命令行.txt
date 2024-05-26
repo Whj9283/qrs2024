@@ -2,7 +2,7 @@
 yolo task=detect mode=train model=yolov8m.pt data=D:\for_study\code_source\code\qrs_yolov8\ultralytics\datasets\Emotional_detection\data.yaml epochs=100 imgsz=640 workers=1 batch=1
 
 继续训练：
-yolo task=detect mode=train model=.pt data=/home/h3c/LuoJiaxuan/test/datasets/Emotional_detection/data.yaml epochs=100 workers=1 batch=50
+yolo task=detect mode=train model=.pt data=/test/datasets/Emotional_detection/data.yaml epochs=100 workers=1 batch=50
 
 
 数据集小(几百张图片):使用yolov8n或yolov8s。过大模型会过拟合。
