@@ -1,0 +1,11 @@
+/home/h3c/LuoJiaxuan/test/datasets/Emotional_detection/data.yaml
+yolo task=detect mode=train model=yolov8m.pt data=D:\for_study\code_source\code\qrs_yolov8\ultralytics\datasets\Emotional_detection\data.yaml epochs=100 imgsz=640 workers=1 batch=1
+
+继续训练：
+yolo task=detect mode=train model=.pt data=/home/h3c/LuoJiaxuan/test/datasets/Emotional_detection/data.yaml epochs=100 workers=1 batch=50
+
+
+数据集小(几百张图片):使用yolov8n或yolov8s。过大模型会过拟合。
+数据集中等(几千张图片):yolov8s或yolov8m。能获得较高精度,不易过拟合。
+数据集大(几万张图片):yolov8l或yolov8x。模型容量大,充分拟合大数据量,能发挥模型效果。
+超大数据集(几十万张以上):首选yolov8x。超大模型才能处理海量数据并取得最优效果。
